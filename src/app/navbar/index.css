@@ -1,0 +1,15 @@
+.wd-main-content {
+    background-color: #F7F7F7;
+}
+
+.wd-avatar-container {
+    background-color: lightgray;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.wd-avatar {
+    color: gray;
+    font-size: 20px;
+}

@@ -1,70 +1,102 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Stepful Product Engineer Take-Home Project
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+This repository contains my submission for the Stepful Product Engineer take-home project. It's a full-stack web application designed for managing the scheduling of 1-on-1 coaching calls at Stepful. The project is structured into two main components: the backend server and the frontend application.
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Prerequisites
 
-### `npm test`
+Before running the application, ensure you have the following installed:
+- Node.js (Download from [Node.js](https://nodejs.org/))
+- PostgreSQL (Download from [PostgreSQL](https://www.postgresql.org/download/))
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Installing and Running the Application
 
-### `npm run build`
+1. **Clone the Backend Repository:**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   git clone https://github.com/gowtham7991/StepfulNodeServer.git
+   cd stepful-backend
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Install Backend Dependencies:**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   npm install
+   ```
 
-### `npm run eject`
+3. **Set Up the Database:**
+   
+   Ensure PostgreSQL is running. Create a new database and update the database configuration in the backend project accordingly.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. **Run the Backend Server:**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   node app.js
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   The backend server will start on `http://localhost:4000`.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+5. **Clone the Frontend Repository:**
 
-## Learn More
+   Open a new terminal window.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   ```bash
+   git clone https://github.com/gowtham7991/stepful-coachingscheduler.git
+   cd stepful-frontend
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+6. **Install Frontend Dependencies:**
 
-### Code Splitting
+   ```bash
+   npm install
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+7. **Run the Frontend Application:**
 
-### Analyzing the Bundle Size
+   ```bash
+   npm start
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+   The frontend application will start on `http://localhost:3000`.
 
-### Making a Progressive Web App
+8. **Access the Application:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+   Open a web browser and navigate to `http://localhost:3000` to use the application.
 
-### Advanced Configuration
+## Built With
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- **Frontend:** React + Redux
+- **Backend:** Node.js with Express
+- **Database:** PostgreSQL
 
-### Deployment
+## Functionality
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- User login/register (dummy implementation).
+- Coaches can add and view their availability.
+- Students can view and book available slots.
+- Both coaches and students can view contact details upon booking.
+- Coaches can submit and view feedback for completed sessions.
 
-### `npm run build` fails to minify
+## Repository Links
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Backend Repo: [Stepful Backend](https://github.com/gowtham7991/StepfulNodeServer)
+- Frontend Repo: The current link
+
+## Author
+
+- Gowtham Potnuru
+
+## Acknowledgments
+
+- Stepful team for providing this opportunity.
+- All open-source contributors whose tools made this project possible.
+
+---
+
+Feel free to reach out to me at [gowthampotnuru1997@gmail.com] for any queries or issues regarding the setup and execution of this project.
